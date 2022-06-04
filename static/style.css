@@ -1,0 +1,28 @@
+
+body{
+    background-color: orange;
+    text-align: center;
+}
+
+input[type=file] {
+    display:inline-block;
+    }
+
+img {
+    width:70%;
+    }
+
+hr{
+    border: 5px solid black;
+    }
+
+select {
+    height: 50px;
+    width: 70px;
+    border-radius: 10px;
+    font-weight: bold !important;
+    color: #000 !important;
+    background:  #ffe6e6 !important;
+    text-transform: uppercase;
+}
+

@@ -1,0 +1,53 @@
+<!-- frontend code for image processing -->
+<html>
+<title> Image Processing </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+<body>
+<center>
+
+<br>
+<h1>Image Processing</h1><hr>
+<form method="post" action="/" enctype="multipart/form-data"><br><br> 
+    <h2>Select an Image for adding effects.</h2>
+
+		<select name="image_type_selection">
+			<option value="gray">Gray</option>
+			<option value="sketch">Sketch</option>
+
+			<option value="oil">Oil</option>
+			<option value="rgb">RGB</option>
+
+			<!--#add Water, Invert and HDR option here below-->
+			<option value="water">Water</option>
+
+			<option value="invert">Inverted</option>
+
+			<option value="hdr">HDR</option>
+
+
+
+		</select>
+
+
+	<input class="btn btn-primary btn-lg" type="file" name="file" ><br><br>
+    <input class="btn btn-success btn-lg" type="submit" value="Submit">
+
+    <img src="{{ url_for('display_image', filename=filename) }}">
+</form>
+
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
